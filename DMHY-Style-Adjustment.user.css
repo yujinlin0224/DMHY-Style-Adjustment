@@ -1,17 +1,17 @@
 /* ==UserStyle==
 @name         DMHY Style Adjustment
 @namespace    abc1236762
-@version      3.0.0
+@version      2.0.0
 @description  DMHY Style Adjustment
 @author       abc1236762 <abc1236762@outlook.com> (https://gitlab.com/abc1236762)
 @license      MIT
 @homepageURL  https://github.com/abc1236762/DMHY-Style-Adjustment
 @supportURL   https://github.com/abc1236762/DMHY-Style-Adjustment/issues
-@updateURL    https://github.com/abc1236762/DMHY-Style-Adjustment/raw/master/DMHY-Style-Adjustment.user.styl
+@updateURL    https://github.com/abc1236762/DMHY-Style-Adjustment/raw/master/DMHY-Style-Adjustment.user.css
 @preprocessor stylus
 ==/UserStyle== */
 
-@-moz-document regexp("https?://((www|share).)?dmhy.org(/.*)?") {
+@-moz-document regexp("^https?://((www|share).)?dmhy.org(/.*)?$") {
 
   /* Main Page */
 
