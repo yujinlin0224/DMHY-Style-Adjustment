@@ -1,47 +1,19 @@
 /* ==UserStyle==
-@name         DMHY Style Adjustment
+@name         動漫花園樣式調整 DMHY Style Adjustment
 @namespace    abc1236762
-@version      2.0.0
-@description  DMHY Style Adjustment
+@version      2.0.1
+@description  動漫花園樣式調整 DMHY Style Adjustment
 @author       abc1236762 <abc1236762@outlook.com> (https://gitlab.com/abc1236762)
 @license      MIT
 @homepageURL  https://github.com/abc1236762/DMHY-Style-Adjustment
 @supportURL   https://github.com/abc1236762/DMHY-Style-Adjustment/issues
 @updateURL    https://github.com/abc1236762/DMHY-Style-Adjustment/raw/master/DMHY-Style-Adjustment.user.css
-@preprocessor stylus
-==/UserStyle== */
-
-@-moz-document regexp("^https?://((www|share).)?dmhy.org(/.*)?$") {
-
-  /* Main Page */
-
-  .container .bg {
-    margin: 0px !important;
-    min-width: 960px !important;
-  }
-  div.header {
-    background: #28477d !important;
-  }
-  .headerright .links {
-    background: transparent !important;
-  }
-  #mini_jmd {
-    width: auto !important;
-  }
-  table.tablesorter {
-    border-spacing: 0px !important;
-  }
-
-  /* TODO: add switch */
-
-  /* table.jmd {
-    border-spacing: 0px !important;
-  } */
-
+@preprocessor uso
+@advanced dropdown jmd_base "新番資源索引 Resource index of new programs" {
+  week "整周 Whole week" <<<EOT
   table.jmd {
     display: none !important;
   }
-
   table.jmd_base {
     display: table !important;
     width: 100% !important;
@@ -74,9 +46,35 @@
   table.jmd_base a:hover {
     color: orange !important;
   }
+  EOT;
+  4day "四天 4 days" <<<EOT
+  table.jmd {
+    border-spacing: 0px !important;
+  }
+  EOT;
+}
+==/UserStyle== */
 
-  /* TODO: add switch end */
+@-moz-document regexp("^https?://((www|share).)?dmhy.org(/.*)?$") {
 
+  /* Main Page */
+  .container .bg {
+    margin: 0px !important;
+    min-width: 960px !important;
+  }
+  div.header {
+    background: #28477d !important;
+  }
+  .headerright .links {
+    background: transparent !important;
+  }
+  #mini_jmd {
+    width: auto !important;
+  }
+  table.tablesorter {
+    border-spacing: 0px !important;
+  }
+  /*[[jmd_base]]*/
   .quick_search {
     width: auto !important;
     margin: 0px !important;
@@ -89,7 +87,6 @@
   .formButton {
     padding: 0px 5px !important;
   }
-
   .announce {
     display: none !important;
   }
@@ -109,7 +106,6 @@
   img[src='/images/btn_postbt.gif'] {
     display: none !important;
   }
-
   .table {
     padding: 0px !important;
   }
@@ -124,7 +120,6 @@
   }
 
   /* Topic Page */
-
   .topics_bk {
     border-top-width: 0px !important;
     padding-top: 0px !important;
@@ -147,6 +142,9 @@
   .topic-title {
     height: 204px !important;
   }
+  .topic-title .info {
+    text-shadow: none !important;
+  }
   .resource-info li:nth-last-child(4):after {
     font-size: 12px !important;
     content: '右邊的檔案列表上方' !important;
@@ -161,12 +159,10 @@
   li.share {
     font-size: 0px !important;
   }
-
   .info.resource-info {
     margin-top: 0px !important;
     float: left !important;
   }
-
   .ui-tabs-panel {
     margin: 0px !important;
   }
@@ -187,14 +183,12 @@
   .file_list ul {
     border: 1px solid #247 !important;
   }
-
   .ui-tabs-nav.ui-helper-reset {
     display: none !important;
   }
   .ui-tabs .ui-tabs-panel {
     padding: 0px !important;
   }
-
   div[class='topic-nfo box ui-corner-all'] ~ br {
     display: none !important;
   }
@@ -203,11 +197,10 @@
   }
 
   /* Advertisement */
-
   /* div[id$='_ad'] {
     display: none !important;
   } */
-  div[id$='_ad'] > a[href*='pixivbook'] {
+  div[id$='_ad'] > a > img[src$='.gif'] {
     display: none !important;
   }
   div[id='bebiv3_ad'] {
