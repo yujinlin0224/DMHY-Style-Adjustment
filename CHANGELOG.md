@@ -7,7 +7,7 @@
 
 ## 2.0.0 - 2020-04-28
 
-- 從[userstyles.org](https://userstyles.org/)遷移到Github
+- 從[userstyles.org](https://userstyles.org/styles/119129)遷移到Github
 - 初始支援Stylus
 
 ## 1.4.8 - 2019-04-07
