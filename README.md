@@ -20,7 +20,7 @@
    - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
    - [Google Chrome / Microsoft Edge](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
    - [Opera](https://addons.opera.com/extensions/details/stylus/)
-2. Click [here](https://github.com/abc1236762/DMHY-Style-Adjustment/raw/master/DMHY-Style-Adjustment.user.css) to install the style.
+2. Click [here](https://github.com/abc1236762/DMHY-Style-Adjustment/raw/master/DMHY-Style-Adjustment.user.css) to install the style
 
 ![screenshot1](screenshot1.png)
 ![screenshot2](screenshot2.png)
