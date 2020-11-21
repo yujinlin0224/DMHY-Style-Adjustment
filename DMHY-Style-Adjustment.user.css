@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         動漫花園樣式調整 DMHY Style Adjustment
 @namespace    abc1236762
-@version      2.0.3
+@version      2.0.4
 @description  動漫花園樣式調整 DMHY Style Adjustment
 @author       abc1236762 <abc1236762@outlook.com> (https://gitlab.com/abc1236762)
 @license      MIT
@@ -200,10 +200,10 @@
   /* div[id$='_ad'] {
     display: none !important;
   } */
-  div[id$='_ad'] > a > img[src$='.gif'] {
+  div[id$='_ad'] > a > img[src*='.gif'] {
     display: none !important;
   }
-  div[id$='_ad'] > a > img[src$='.jpg'] {
+  div[id$='_ad'] > a > img[src*='.jpg'] {
     display: none !important;
   }
   div[id='bebiv3_ad'] {
