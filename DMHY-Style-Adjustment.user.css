@@ -218,5 +218,8 @@
   div[class='box ui-corner-all'] {
     display: none !important;
   }
+  iframe {
+    display: none !important;
+  }
 
 }
