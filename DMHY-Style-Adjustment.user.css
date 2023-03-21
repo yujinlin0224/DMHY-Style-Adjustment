@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         動漫花園樣式調整 DMHY Style Adjustment
 @namespace    yujinlin0224
-@version      3.0.0
+@version      3.0.1
 @description  動漫花園樣式調整 DMHY Style Adjustment
 @author       yujinlin0224 <yujinlin0224@outlook.com> (https://githab.com/yujinlin0224)
 @license      MIT
@@ -131,6 +131,9 @@
     padding: 2px 6px !important;
   }
   .download-pikpak {
+    display: none;
+  }
+  .download-pp {
     display: none;
   }
 
